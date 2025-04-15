@@ -1,0 +1,170 @@
+/* Style global */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fond sombre noir-gris */
+    color: #fff; /* Texte en blanc pour un contraste élevé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style du formulaire */
+  form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); /* Ombre discrète */
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+  
+  /* Style des titres */
+  h1, h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff8c00; /* Orange vif pour les titres */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style des champs de saisie */
+  input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e1e6ef; /* Bordure subtile */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Fond clair pour les champs */
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Changement de la bordure au focus */
+  input:focus {
+    border-color: #ff8c00; /* Bordure orange au focus */
+    outline: none;
+  }
+  
+  /* Style du bouton */
+  button {
+    padding: 15px;
+    width: 100%;
+    background-color: #ff8c00; /* Orange pour le bouton */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Effet sur le bouton au survol */
+  button:hover {
+    background-color: #e57300; /* Orange foncé au survol */
+  }
+  
+  /* Message d'erreur */
+  .error {
+    color: #f44336; /* Rouge vif pour l'erreur */
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Style du tableau BackOffice */
+  table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  }
+  
+  /* En-têtes du tableau */
+  th {
+    padding: 12px;
+    text-align: left;
+    background-color: #ff8c00; /* Orange vif pour les en-têtes */
+    color: white; /* Texte blanc pour contraster avec l'orange */
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  /* Cellules du tableau */
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: #333; /* Texte sombre pour une bonne lisibilité */
+  }
+  
+  /* Style des actions dans le tableau */
+  .action-btn {
+    color: #ff8c00; /* Orange pour les actions */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Effet au survol des actions */
+  .action-btn:hover {
+    color: #e57300; /* Changement de couleur au survol */
+  }
+  
+  /* Liens */
+  .link a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* Effet sur les liens au survol */
+  .link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mise en forme des utilisateurs dans la liste */
+  #userTable {
+    word-wrap: break-word; /* Permet de gérer le retour à la ligne pour les emails longs */
+    table-layout: auto; /* Réajuste la taille des colonnes pour un affichage optimal */
+  }
+  
+  /* Boutons Modifier et Supprimer */
+  button.edit-btn {
+    background-color: #4caf50; /* Vert pour Modifier */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Effet au survol du bouton Modifier */
+  button.edit-btn:hover {
+    background-color: #388e3c; /* Vert foncé au survol */
+  }
+  
+  /* Bouton Supprimer */
+  button.delete-btn {
+    background-color: #f44336; /* Rouge pour Supprimer */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Effet au survol du bouton Supprimer */
+  button.delete-btn:hover {
+    background-color: #d32f2f; /* Rouge foncé au survol */
+  }
+  
