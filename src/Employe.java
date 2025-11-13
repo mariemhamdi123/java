@@ -33,6 +33,13 @@ public class Employe implements Comparable<Employe> {
     public int getGrade() { return grade; }
     public void setGrade(int grade) { this.grade = grade; }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Employe employe = (Employe) obj;
+        return id == employe.id && nom.equalsIgnoreCase(employe.nom);
+    }
     // toString
     @Override
     public String toString() {
